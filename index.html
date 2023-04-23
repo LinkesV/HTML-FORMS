@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width, intitial scale=1.0">
+    <link rel="stylesheet" href="styles6.css">
+    <title>HTML FORMS</title>
+    
+</head>
+<body>
+    <div id="maindiv">
+        <div id="formdiv">
+            <form id="form" onsubmit="event.preventDefault(); onSubmit()">
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" value=""><br>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" value=""><br>
+                <label for="address">Address: </label>
+                <input type="text" id="address" value=""><br>
+                <label for="gender">Gender: </label>
+                <input type="text" id="gender" value=""><br>
+                <label for="food">Choice of food</label>
+                <select name="food" id="food">
+                    <option value="saambar">Sambaar</option>
+                    <option value="Biriyani">Biriyani</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Vadai">Vadai</option>
+                    <option value="Pizza">Pizza</option>
+                  </select><br>
+                <label for="state">State: </label>
+                <input type="text" id="state" value=""><br>
+                <label for="Country">Country: </label>
+                <input type="text" id="Country" value=""><br>
+                <input type="submit" id="submitbutton">
+            </form>
+        </div>
+        <div id="table">
+            <table id="formtable">
+                <thead id="tablehead">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                    <th>Choice of Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </thead>
+                <tbody id="tablebody">
+                </tbody>
+            </table>
+        </div>
+</div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
